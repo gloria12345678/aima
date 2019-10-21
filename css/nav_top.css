@@ -101,7 +101,7 @@ body{
     background-image: url(../img/tel.png);
 }
 .navLage{
-    height:50px;
+    height:75px;
     display: none;
 }
 .navButton{
@@ -176,5 +176,11 @@ body{
     }
     .navLage{
         display: block;
+    }
+    .Titles{
+        height: 70px;
+        background-image: url(../img/titleback.png);
+        background-repeat: repeat-x;
+        background-size: unset;
     }
 }

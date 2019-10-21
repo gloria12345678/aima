@@ -63,8 +63,7 @@ margin-top: 5px;
         margin: 3px;
         border: 2px darksalmon solid;
         width: 45px;
-        height: 62px;
-        background-color: #da7fff;
+        height: 60px;
         float: left;
     }
     .staPhotoffBox{
@@ -74,5 +73,10 @@ margin-top: 5px;
     .txt{
         width: 35%;
         margin-right:90px ;
+    }
+   
+    .stafftitle{
+        background-size: unset;
+ 
     }
  }

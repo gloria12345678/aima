@@ -99,9 +99,13 @@
     .news{
         display: none;
     }
+    .girlPhotoBox {
+        height: 70%;
+    }
     .newsAndMolir{
         display: block;
         height: 700px;
+       
     }
     .news1{
         width: 50%;
@@ -117,6 +121,8 @@
         width: 50%;
         height: 100%;
         float: right;
+        background-image: url(../img/qrcode.png);
+        background-size: unset;
     }
     .newsTitle{
         height: 50px;
