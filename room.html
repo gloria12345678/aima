@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="swiper.min.css">
+  <link rel="stylesheet" href="css/nav_top.css">
+  <script src="swiper.min.js"></script>
+  </head>
+<style>
+  .room{
+    height: 600px;
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: center;
+  }
+  .swiper-container {
+    width: 310px;
+    height: 398px;
+    margin-top: 30px;
+    z-index: 0;
+    position: absolute;
+  }
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: seagreen;
+  }
+  .roomtitle{
+    height: 50px;
+    background-image: url(img/roomtitle.png);
+}
+</style>
+<body>
+    <div class="nav">
+        <div class="telephone"><a href="tel://09091546417">Tel:090-9154-6417</a></div>
+        <div class="navimg" id="nav"></div>
+    </div>
+    <div class="navLong">
+        <div class="navLongLogo"></div>
+        <div class="navLong1">ホーム</div>
+        <div class="navLong1">システム</div>
+        <div class="navLong1">スタッフ</div>
+        <div class="navLong1">店内風景</div>
+        <div class="navLong1">アクセス</div>
+        <div class="navLong1">リクルート</div>
+        <div class="navLong2"><a href="tel://09091546417">Tel:090-9154-6417</a></div>
+    </div>
+    <!-- <div class="navWidth"></div> -->
+    <div class="top">
+        <div class="logo"></div>
+        <div class="tel"></div>
+    </div>
+    <div class="focus" id="focus"></div>
+    <div class="navLage">
+        <div class="navButton"><a href="index.html"><img src="img/images/nav_01.png"></a></div>
+        <div class="navButton"><a href="system.html"><img src="img/images/nav_02.png"></a></div>
+        <div class="navButton"><a href="girl.html"><img src="img/images/nav_03.png"></a></div>
+        <div class="navButton"><a href="room.html"><img src="img/images/nav_04.png"></a></div>
+        <div class="navButton"><a href="access.html"><img src="img/images/nav_05.png"></a></div>
+        <div class="navButton"><a href="recruit.html"><img src="img/images/nav_06.png"></a></div>
+    </div>
+    <div class="Titles">
+      <div class="roomtitle"></div>
+    </div>
+    <div class="room">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/r1.jpg"></div>
+              <div class="swiper-slide"><img src="img/r2.jpg"></div>
+              <div class="swiper-slide"><img src="img/r3.jpg"></div>
+              <div class="swiper-slide"><img src="img/r4.jpg"></div>
+            </div>
+          </div>
+    </div>
+    <div class="end">
+        <div class="logo"></div>
+        <div class="tel"></div>
+        <div class="button"></div>
+</div>
+</body>
+<script>
+  var mySwiper = new Swiper('.swiper-container', {
+    effect : 'cube',
+cube: {
+  slideShadows: true,
+  shadow: true,
+  shadowOffset: 100,
+  shadowScale: 0.6
+}
+})
+</script>
+
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"> </script>
+</html>

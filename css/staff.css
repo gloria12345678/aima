@@ -1,0 +1,78 @@
+/*10/8*/
+/*toyo*/
+.stafftitle{
+    height: 50px;
+    background-image: url(../img/stafftitle.png);
+}
+.swiper-container {
+    width: 157px;
+    height: 212px;
+    z-index: 0;
+    position: absolute;
+    margin: 4px;
+    border: 2px darksalmon solid;
+  }
+  .staffBox {
+    width: 96%;
+    height: 335px;
+    background-color: #ffe9cf;
+    padding: 6px;
+    border: 2px #77e4fd solid;
+    border-radius: 10px;
+  }
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .staPhotoffBox{
+      width: 55%;
+      height: 280px;
+      float: left;
+  }
+  .staBigPhotoffBox{
+      height: 237px;
+  }
+  .staPhotoffBoxSmall ul li{
+    margin: 3px;
+    border: 2px darksalmon solid;
+    width: 45px;
+    height: 58px;
+    float: left;
+  }
+  .staPhotoffBoxSmall ul{
+    width: 100%;
+  }
+  .txt{
+      width: 45%;
+      height: 100px;
+      font-size: 10px;
+      float: right;
+  }
+  .txt h2,h3,h4{
+margin-top: 5px;
+    border: 2px darksalmon solid;
+  }
+.txt h4{
+    height: 174px;
+    background-color: floralwhite;
+    overflow-y: scroll;
+  }
+  @media screen and (min-width:900px) {
+    .staPhotoffBoxSmall ul li{
+        margin: 3px;
+        border: 2px darksalmon solid;
+        width: 45px;
+        height: 62px;
+        background-color: #da7fff;
+        float: left;
+    }
+    .staPhotoffBox{
+        width: 35%;
+        margin-left: 111px;
+    }
+    .txt{
+        width: 35%;
+        margin-right:90px ;
+    }
+ }
