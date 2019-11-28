@@ -39,64 +39,20 @@
             <div class="navButton"><a href="access.html"><img src="img/images/nav_05.png"></a></div>
             <div class="navButton"><a href="recruit.html"><img src="img/images/nav_06.png"></a></div>
     </div>
-    <div class="girlPhoto" id="girlPhoto">
+    <div class="girlPhoto" id="girlPhoto1">
             <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                            <div class="swiper-slide" >
-                               <div class="girlPhotoBigBox">
-                                    <div class="girlPhotoBox"><img  id="" src="staff/a.jpg" ></div>
-                                    <div class="girlPhotoName">歩み（２２さい）</div>
-                               </div>
-                               <div class="girlPhotoBigBox">
-                                    <div class="girlPhotoBox"><img  id="" src="staff/2.jpg" ></div>
-                                    <div class="girlPhotoName">みお（４４さい）</div>
-                               </div>
+                    <div class="swiper-wrapper" id="girlPhoto">
                             </div>
-                            <div class="swiper-slide" >
-                                    <div class="girlPhotoBigBox">
-                                         <div class="girlPhotoBox"><img  id="" src="staff/3.jpg" ></div>
-                                         <div class="girlPhotoName">ハナ（２１さい）</div>
-                                    </div>
-                                    <div class="girlPhotoBigBox">
-                                         <div class="girlPhotoBox"><img  id="" src="staff/4.jpg" ></div>
-                                         <div class="girlPhotoName">まお（２６さい）</div>
-                                    </div>
-                                 </div>
                     </div>
             </div>
-    </div>
-    <div class="girlPhotoLage">
-
-            <div class="girlPhotoBigBox">
-                    <div class="girlPhotoBox"><img  id="" src="staff/a.jpg" ></div>
-                    <div class="girlPhotoName">歩み（２２さい）</div>
-               </div>
-               <div class="girlPhotoBigBox">
-                    <div class="girlPhotoBox"><img  id="" src="staff/2.jpg" ></div>
-                    <div class="girlPhotoName">みお（４４さい）</div>
-               </div>
-               <div class="girlPhotoBigBox">
-                    <div class="girlPhotoBox"><img  id="" src="staff/3.jpg" ></div>
-                    <div class="girlPhotoName">ハナ（２１さい）</div>
-               </div>
-               <div class="girlPhotoBigBox">
-                    <div class="girlPhotoBox"><img  id="" src="staff/4.jpg" ></div>
-                    <div class="girlPhotoName">まお（２６さい）</div>
-               </div>
     </div>
     <div class="event" id="event"></div>
     <div class="newsAndMolir">
             <div class="news1">
                     <div class="newsTitle"></div>
                     <div class="newsText">
-                        <!-- <div class="text">
-                            <p>2019年10月21日11：30</p>
-                            <hr>
-                                曖昧です
-                                午後はこれから幕開けです～
-                                曖昧はＭＡＸレベルの人数を抱えて皆様をお迎えいたします♪
-                                ぜひアダルト気分全開にして夜のお遊びにいらしてくださいませ
-                        </div> -->
+                        <div class="text"id="catchMynews">
+                        </div>
                     </div>
                 </div>
                 <div class="molir">
@@ -127,12 +83,13 @@
 <script src="swiper.min.js"></script>
 <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"> </script>
 <script src="js/index.js"></script>
+<script src="js/girl.js"></script>
 <script>
 var swiper = new Swiper('.swiper-container', {
     autoplay: 2000,
     });
 divHeight(2.2,"focus");
-divHeight(1.2,"girlPhoto");
+divHeight(1.2,"girlPhoto1");
 divHeight(4.0,"event");
 divHeight(2.3,"map");
 </script>

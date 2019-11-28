@@ -9,9 +9,16 @@ $(document).ready(function(){
   });
   function divHeight(_widthAndPercent,divId){
     let Id =document.getElementById(divId)
-    console.log(Id);
+    let Id1 =document.getElementById("girlPhoto1")
+    console.log(Id1);
     let winWidth = Id.offsetWidth;
-    let divHeight = winWidth/_widthAndPercent;
-    Id.style.height = divHeight+"px";
-  }
+    console.log(winWidth);
+    if(winWidth>890){
+      console.log(winWidth);
+      Id1.style.height ="365px";
+    }else{
+      let divHeight = winWidth/_widthAndPercent;
+      Id.style.height = divHeight+"px";
+    }
 
+  }
