@@ -32,32 +32,31 @@ fetch(myApi)
 
 var myList1 = document.getElementById('catchMynews');
 var myApi1 ="https://test-cms-alpha.herokuapp.com/sites/7/tweets.json"
-// console.log(myList1);
 fetch(myApi1)
 .then(function(response) {
   if (!response.ok) {
-    // throw new Error("HTTP error, status = " + response.status);
+    throw new Error("HTTP error, status = " + response.status);
   }
   return response.json();
 })
 .then(function(json) {
-    // console.log(json);
-    // console.log(json.length);
+    console.log(json);
+    console.log(json.length);
   for(var i=0; i<json.length; i++) {
-
     console.log(i);
     var listItem = document.createElement('div');
     listItem.innerHTML = '<p>' + json[i].created_at+ '</p>';
     listItem.innerHTML +='<hr>';
     listItem.innerHTML +='<p>' + json[i].content + '<p>';
     myList1.appendChild(listItem);
+    console.log(myList1);
   }
 })
 .catch(function(error) {
   var p = document.createElement('p');
-  // p.appendChild(
-  //   // document.createTextNode('Error: ' + error.message)
-  // );
+  p.appendChild(
+    // document.createTextNode('Error: ' + error.message)
+  );
   document.body.insertBefore(p, myList);
 });
 
