@@ -122,7 +122,7 @@ body{
     background-color: violet;
 }
 .end{
-    height: 180px;/*需要调试*/
+    height: 195px;/*需要调试*/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
