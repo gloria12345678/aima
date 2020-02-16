@@ -68,7 +68,7 @@ body{
     height: 104px;
     text-align: center;
     vertical-align: middle;
-    background-image: url(../img/logo.png);
+    background-image: url(../img/footlogo.png);
 }
 .navLong2{
     border-top: 3px salmon solid;
@@ -82,8 +82,9 @@ body{
     vertical-align: middle;
 }
 .top{
-    height: 212px;
-    padding-top: 80px;
+    height: 220px;
+
+    padding-top: 62px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -92,14 +93,24 @@ body{
 }
 
 .logo{
-    width: 280px;/*需要调试*/
-    height: 100px;
+    width: 355px;
+    height: 115px;
     background-image: url(../img/logo.png);
 }
 .tel{
     width: 224px;
     height: 108px;
     background-image: url(../img/tel.png);
+}
+.footlogo{
+    width: 355px;
+    height: 115px;
+    background-image: url(../img/footlogo.png);
+}
+.foottel{
+    width: 224px;
+    height: 76px;
+    background-image: url(../img/footing.png);
 }
 .navLage{
     height:75px;
