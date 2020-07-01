@@ -27,15 +27,15 @@ function loadMyStaff(){
           para.innerHTML = '<div class="staffBox"><div class="staPhotoffBox"id="staffPro'+i+'"><div class="staBigPhotoffBox"><div class="swiper-container swiper-c" id="swiper'+i+'"><div class="swiper-wrapper"><div class="swiper-slide swiper-slide1"><img id="img1" src="'+ img[0]+'"></div><div class="swiper-slide"><img id="img2" src="'+ img[1]+'"></div> <div class="swiper-slide"><img id="img3" src="'+ img[2]+'"></div></div></div></div><div class="staPhotoffBoxSmall"><ul><li><img id="" src="'+ img[0]+'"></li><li><img id="" src="'+ img[1]+'"></li><li><img id="" src="'+ img[2]+'"></li></ul></div></div><div class="txt"><h2 id="name">' + json[i].name+ '</h2> <br><h2 id="old">年齢:' + json[i].age+ '</h2><br><h3 id="sizi">3サイズ：' + json[i].abstract + '</h3><br><h4 id="txt">' + json[i].description + '</h4></div></div>';
           myList.appendChild(para);
           var staffPro = document.getElementById('staffPro'+[i]);
-          staffPro.addEventListener('click', locationStaff, true);
+          // staffPro.addEventListener('click', locationStaff, true);
           var mySwiper = new Swiper('#swiper'+i,{
             direction : 'horizontal',
             loop : true,
           })
-            function locationStaff (){
-           // console.log( 'staff.html?id='+[i])
-           window.location.href = 'girl_big.html?'+[i]+'&aassdfwdw##5345afasdfqweqw';
-          };
+          //   function locationStaff (){
+          //  // console.log( 'staff.html?id='+[i])
+          //  window.location.href = 'girl_big.html?'+[i]+'&aassdfwdw##5345afasdfqweqw';
+          // };
           var mySwiper = new Swiper('.swiper-container1',{
            direction : 'horizontal',
            })
