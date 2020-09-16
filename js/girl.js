@@ -52,21 +52,6 @@ function loadIndexStaff(){
         let json =new Array
         json = JSON.parse(this.responseText);
         console.log(json);
-        // let winWidth = apiList1.offsetWidth;
-        // console.log(winWidth);
-        // if(winWidth==300){
-        //   for(var i = 0; i < json.length; i++) {
-        //     var girlPhoto =document.createElement("div");
-        //     girlPhoto.setAttribute("class","swiper-slide");
-        //     girlPhoto.setAttribute("id","swiper2");
-        //     girlPhoto.innerHTML = '<div class="girlPhotoBox"><img src="https://test-cms-alpha.herokuapp.com'+json[i].avatars[0]+'">';
-        //     apiList1.appendChild(girlPhoto);
-        //     var swiper = new Swiper('#Swiper0', {
-        //       loop : true,
-        //       autoplay:2000,
-        //     });
-        //   }
-        // }else{
           for(var i = 0; i < json.length; i++) {
             var girlPhoto =document.createElement("div");
             girlPhoto.setAttribute("class","swiper-slide");
@@ -75,15 +60,15 @@ function loadIndexStaff(){
             var k = i+i+1
             girlPhoto.innerHTML = '<div class="girlPhotoBigBox"><div class="girlPhotoBox"><img src="https://test-cms-alpha.herokuapp.com'+json[j].avatars[0]+'"></div></div><div class="girlPhotoBigBox"><div class="girlPhotoBox"><img src="https://test-cms-alpha.herokuapp.com'+json[k].avatars[0]+'"></div></div>';
             apiList.appendChild(girlPhoto);
-            var mySwiper = new Swiper(".swiper-container",{
+            var mySwiper = new Swiper("#Swiper99",{
               autoplay:2000,
             })
-          //}
         }
       }              
   }
   xhr.send();
 }
+
 function loadnews(){
   let xhr = new XMLHttpRequest();
   xhr.open("GET",myApi1,true);
